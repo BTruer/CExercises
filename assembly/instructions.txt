@@ -1,0 +1,15 @@
+commands:
+
+gcc -S code.c
+--> generates code.s
+
+gcc -c code.c
+--> generates code.o
+
+objdump -d code.o
+(or)
+objdump -d code.o > codeAss.txt
+--> generates assembly equivilent
+
+gcc -S -masm=intel code.c
+--> generates code.s in intel format rather then ATT
